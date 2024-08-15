@@ -1,4 +1,4 @@
-# <img src = "pngs/barber.png" style="zoom:27%;" > HAIR: Hypernetworks-based All-in-One Image Restoration
+# <img src = "pngs/barber.png" style="zoom:10%;" > HAIR: Hypernetworks-based All-in-One Image Restoration
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.13090)
 
