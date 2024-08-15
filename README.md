@@ -9,7 +9,7 @@
 <hr />
 
 🔥 *New SOTA for all-in-one image restoration for a range of tasks, including Dehaze, Denoise, Derain, Deblur, Low-light Enhancement, etc.*
-**Please give us a star if you find this work interesting.**
+**Please give us a star ★ if you find this work interesting.**
 
 ## Network Architecture
 
