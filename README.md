@@ -16,6 +16,9 @@
 
 <img src = "pngs/arch.png"> 
 
+## Update
+- **2024.8.16**: Release raw codes without comments.
+
 ## Installation and Data Preparation
 
 See [INSTALL.md](INSTALL.md) for the installation of dependencies and dataset preperation required to run this codebase. (Note that this repository is prepared for 3-degradation setting. For 5-degradation setting, please refer [IDR](https://github.com/JingHao99/IDR-Ingredients-oriented-Degradation-Reformulation).
