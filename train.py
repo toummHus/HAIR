@@ -8,7 +8,6 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 
 from utils.dataset_utils import TrainDataset
-from net.model import PromptIR
 from utils.schedulers import LinearWarmupCosineAnnealingLR
 import numpy as np
 import wandb
