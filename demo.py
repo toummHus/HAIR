@@ -6,7 +6,6 @@ from net.HAIR import HAIR
 
 import torch
 from torch.utils.data import DataLoader
-from net.model import PromptIR
 
 from utils.dataset_utils import TestSpecificDataset
 from utils.image_io import save_image_tensor
