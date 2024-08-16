@@ -1,15 +1,12 @@
-# <img src = "pngs/barber.png" style="zoom:10%;" > HAIR: Hypernetworks-based All-in-One Image Restoration
+# HAIR: Hypernetworks-based All-in-One Image Restoration
 
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.13090)
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2408.08091)
 
 
 <hr />
 
 > **Abstract:** *Image restoration involves recovering a high-quality clean image from its degraded version, which is a fundamental task in computer vision. Recent progress in image restoration has demonstrated the effectiveness of learning models capable of addressing various degradations simultaneously, i.e., the All-in-One image restoration models. However, these existing methods typically utilize the same parameters facing images with different degradation types, which causes the model to be forced to trade off between degradation types, therefore impair the total performance. To solve this problem, we propose HAIR, a Hypernetworks-based plug-in-and-play method that dynamically generated parameters for the corresponding networks based on the contents of input images. HAIR consists of 2 main components: Classifier (Cl) and Hyper Selecting Net (HSN). To be more specific, the Classifier is a simple image classification network which is used to generate a Global Information Vector (GIV) that contains the degradation information of the input image; And the HSNs can be seen as a simple Fully-connected Neural Network that receive the GIV and output parameters for the corresponding modules. Extensive experiments shows that incorporating HAIR into the architectures can significantly improve the performance of different models on image restoration tasks at a low cost, **although HAIR only generate parameters and haven't change these models' logical structures at all.** With incorporating HAIR into the popular model Restormer, our method obtains superior or at least comparable performance to current state-of-the-art methods on a range of image restoration tasks.* 
 <hr />
-
-🔥 *New SOTA for all-in-one image restoration on a range of tasks, including Dehaze, Denoise, Derain, Deblur, Low-light Enhancement, etc.*
-**Please give us a star ★ if you find this work interesting.**
 
 ## Network Architecture
 
@@ -34,7 +31,7 @@ python train.py --de_type derain dehaze
 
 ## Testing
 
-After preparing the testing data in ```test/``` directory, place the mode checkpoint file in the ```ckpt``` directory. The pretrained model can be downloaded [here](https://drive.google.com/file/d/1Zr0gy8MPFI6q0rytGXuqyqLKrk8bBeQg/view?usp=sharing), alternatively, it is also available under the releases tab. To perform the evalaution use
+After preparing the testing data in ```test/``` directory, place the mode checkpoint file in the ```ckpt``` directory. The pretrained model can be downloaded [here](https://drive.google.com/file/d/1j-b5Od70pGF7oaCqKAfUzmf-N-xEAjYl/view?usp=sharingg), alternatively, it is also available under the releases tab. To perform the evalaution use
 ```
 python test.py --mode {n}
 ```
@@ -80,7 +77,14 @@ Performance results of the PromptIR framework trained under the all-in-one setti
 
 If you use our work, please consider citing:
 
-    @inproceedings{
+    @misc{cao2024hair,
+          title={HAIR: Hypernetworks-based All-in-One Image Restoration}, 
+          author={Jin Cao and Yi Cao and Li Pang and Deyu Meng and Xiangyong Cao},
+          year={2024},
+          eprint={2408.08091},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2408.08091}, 
     }
 
 ## Contact
