@@ -3,7 +3,6 @@ import subprocess
 from tqdm import tqdm
 import numpy as np
 
-from net.model import PromptIR
 import torch
 from torch.utils.data import DataLoader
 import os
