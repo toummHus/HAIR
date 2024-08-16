@@ -245,7 +245,8 @@ class MemoryEfficientAttnBlock(nn.Module):
         out = self.proj_out(out)
         return x+out
 
-
+def make_attn(in_channels, attn_type="vanilla", attn_kwargs=None):
+    return AttnBlock(in_channels)
 
 def make_attn(in_channels, attn_type="vanilla", attn_kwargs=None):
     assert attn_type in ["vanilla", "vanilla-xformers", "memory-efficient-cross-attn", "linear", "none"], f'attn_type {attn_type} unknown'
