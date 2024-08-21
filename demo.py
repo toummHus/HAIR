@@ -106,7 +106,7 @@ if __name__ == '__main__':
     # Make network
     if torch.cuda.is_available():
         torch.cuda.set_device(opt.cuda)
-    net  = HAIRModel().load_from_checkpoint(ckpt_path).to(device)
+    net = HAIRModel.load_from_checkpoint(ckpt_path).to(device)
     net.eval()
 
     test_set = TestSpecificDataset(opt)
