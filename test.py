@@ -139,8 +139,7 @@ if __name__ == '__main__':
 
     net  = HAIRModel().cuda()
     
-    net.load_state_dict(torch.load("train_ckpt/epoch=179-step=18000.ckpt")['state_dict'])
-    # best train_ckpt/epoch=135-step=13600.ckpt
+    net.load_state_dict(torch.load("hair3d.ckpt")['state_dict'])
     net.eval()
 
     
