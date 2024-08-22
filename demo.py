@@ -93,7 +93,7 @@ if __name__ == '__main__':
     opt = parser.parse_args()
 
 
-    ckpt_path = "ckpt/" + opt.ckpt_name
+    ckpt_path = "ckpt/hair3d.ckpt"
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
@@ -106,7 +106,7 @@ if __name__ == '__main__':
     # Make network
     if torch.cuda.is_available():
         torch.cuda.set_device(opt.cuda)
-    nrt = HAIRModel.load_from_checkpoint("ckpt_path",map_location="cpu").to(device)
+    net = HAIRModel.load_from_checkpoint(ckpt_path,map_location="cpu").to(device)
     net.eval()
 
     test_set = TestSpecificDataset(opt)
