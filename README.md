@@ -69,7 +69,7 @@ To use tiling option while running ```demo.py``` set ```--tile``` option to ```T
 
 
 ## Results
-Performance results of the PromptIR framework trained under the all-in-one setting
+Performance results of the Res-HAIR framework trained under the all-in-one setting
 
 **Performance**
 
